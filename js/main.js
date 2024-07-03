@@ -706,3 +706,13 @@ $(document).ready(function() {
         $('#popup1, #overlay').fadeOut();
     });
 });
+$(document).ready(function() {
+    $('#downloadBtn02').on('click', function(e) {
+        e.preventDefault();
+        $('#popup1, #overlay').fadeIn();
+    });
+
+    $('.popup .close-btn, #overlay').on('click', function() {
+        $('#popup1, #overlay').fadeOut();
+    });
+});
